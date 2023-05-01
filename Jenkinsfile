@@ -11,7 +11,9 @@ pipeline{
                 }    
                 steps{
                     script{
-                        
+                        withSonarQubeEnv(credentialsId: 'github-jenkins') {
+                             sh 'mvn clean package sonar:sonar'
+                    }
                     }
                 }
 
