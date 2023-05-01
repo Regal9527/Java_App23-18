@@ -10,7 +10,7 @@ public class SpringbootApplication {
 
 	@GetMapping
 	public String message(){
-		return "welcome to regal";
+		return "welcome to regal ur selected for mnc";
 
 	}
 	
